@@ -18,9 +18,11 @@ RUN     apt-get update && apt-get install -y \
         php5-sqlite \
         nodejs \
         npm \
-        sudo
-RUN ln -s /usr/bin/nodejs /usr/bin/node 
+        sudo \
+        ruby-full
+
+RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN php5enmod mcrypt
-RUN npm install -g bower
-RUN     curl -sS https://getcomposer.org/installer | php
-RUN     mv composer.phar /usr/local/bin/composer
+RUN npm install -g bower grunt-cli gulp gulp-jshint gulp-uglify gulp-continuous-concat gulp-sass gulp-minify-css gulp-csslint gulp-watchRUN gem install compass
+RUN curl -sS https://getcomposer.org/installer | php
+RUN mv composer.phar /usr/local/bin/composer
