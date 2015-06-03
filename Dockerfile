@@ -1,6 +1,15 @@
-#Jenkins docker container by kendu
+#
+#       .
+#        ":"
+#      ___:____     |"\/"|
+#    ,'        `.    \  /
+#    |  O        \___/  |
+#  ~^~^~^~^~^~^~^~^~^~^~^~^~
+
+# Jenkins container
+
 FROM jenkins
-MAINTAINER Lovrenc Avsenek <a.lovrenc@gmail.com>
+MAINTAINER DevOps <devops@kendu.si>
 USER root
 RUN     apt-get update && apt-get install -y \
         php5 \
