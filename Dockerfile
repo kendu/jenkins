@@ -8,6 +8,7 @@
 
 # Jenkins container
 
+
 FROM jenkins
 MAINTAINER DevOps <devops@kendu.si>
 USER root
